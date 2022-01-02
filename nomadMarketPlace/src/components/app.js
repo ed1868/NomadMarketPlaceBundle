@@ -68,7 +68,7 @@ const app= () => (
       <PosedRouter>
       <ScrollTop path="/">
         <Home exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/nomadHome" />
         </Home>
         <Home1 path="/home1" />
         <Home2 path="/home2" />
