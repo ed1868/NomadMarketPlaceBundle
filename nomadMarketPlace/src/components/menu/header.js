@@ -131,7 +131,7 @@ const Header= function() {
                           >
                           Home
                         </div>
-                        {openMenu && (
+                        {/* {openMenu && (
                           <div className='item-dropdown'>
                             <div className="dropdown" onClick={closeMenu}>
                               <NavLink to="/" onClick={() => btn_icon(!showmenu)}>Homepage</NavLink>
@@ -139,7 +139,7 @@ const Header= function() {
                               <NavLink to="/home2" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
                             </div>
                           </div>
-                        )}
+                        )} */}
                       </div>
                     </div>
                     <div className='navbar-item'>
@@ -224,20 +224,14 @@ const Header= function() {
                   <div className='menu'>
                     <div className='navbar-item'>
                         <div ref={ref}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick} onMouseLeave={closeMenu}>
+                        <NavLink to="/nomadHome">Home</NavLink>
+                    
+                          {/* <div className="dropdown-custom dropdown-toggle btn" 
+                             onMouseEnter={handleBtnClick} >
                             Home
                             <span className='lines'></span>
-                            {openMenu && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu}>
-                                <NavLink to="/">Homepage</NavLink>
-                                <NavLink to="/home1">Homepage 1</NavLink>
-                                <NavLink to="/home2">Homepage 2</NavLink>
-                              </div>
-                            </div>
-                          )}
-                          </div>
+                       
+                          </div>  */}
                           
                         </div>
                     </div>
