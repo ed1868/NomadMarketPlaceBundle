@@ -143,6 +143,9 @@ const Header= function() {
                       </div>
                     </div>
                     <div className='navbar-item'>
+
+                    {/* <NavLink to="/explore" onClick={() => btn_icon(!showmenu)}>Explore</NavLink> */}
+                    
                       <div ref={ref1}>
                         <div className="dropdown-custom dropdown-toggle btn" 
                           onClick={handleBtnClick1}
@@ -151,10 +154,11 @@ const Header= function() {
                         </div>
                         {openMenu1 && (
                           <div className='item-dropdown'>
+                            
                             <div className="dropdown" onClick={closeMenu1}>
-                              <NavLink to="/explore" onClick={() => btn_icon(!showmenu)}>Explore</NavLink>
-                              <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Explore 2</NavLink>
-                              <NavLink to="/rangking" onClick={() => btn_icon(!showmenu)}>Rangking</NavLink>
+                              <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Explore</NavLink>
+                              {/* <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Explore 2</NavLink> */}
+                              <NavLink to="/ranking" onClick={() => btn_icon(!showmenu)}>Rankings</NavLink>
                               <NavLink to="/colection/1" onClick={() => btn_icon(!showmenu)}>Collection</NavLink>
                               <NavLink to="/ItemDetail/1" onClick={() => btn_icon(!showmenu)}>Items Details</NavLink>
                               <NavLink to="/Auction" onClick={() => btn_icon(!showmenu)}>Live Auction</NavLink>
@@ -236,6 +240,7 @@ const Header= function() {
                         </div>
                     </div>
                     <div className='navbar-item'>
+                    
                       <div ref={ref1}>
                           <div className="dropdown-custom dropdown-toggle btn" 
                              onMouseEnter={handleBtnClick1} onMouseLeave={closeMenu1}>
@@ -244,9 +249,9 @@ const Header= function() {
                             {openMenu1 && (
                             <div className='item-dropdown'>
                               <div className="dropdown" onClick={closeMenu1}>
-                              <NavLink to="/explore">Explore</NavLink>
-                              <NavLink to="/explore2">Explore 2</NavLink>
-                              <NavLink to="/rangking">Rangking</NavLink>
+                              <NavLink to="/explore2">Explore</NavLink>
+                              {/* <NavLink to="/explore2">Explore 2</NavLink> */}
+                              <NavLink to="/ranking">Rankings</NavLink>
                               <NavLink to="/colection/1">Collection</NavLink>
                               <NavLink to="/ItemDetail/1">Items Details</NavLink>
                               <NavLink to="/Auction">Live Auction</NavLink>

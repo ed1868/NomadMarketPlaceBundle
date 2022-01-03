@@ -76,7 +76,7 @@ const app= () => (
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />
-        <RankingRedux path="/rangking" />
+        <RankingRedux path="/ranking" />
         <Colection path="/colection/:collectionId" />
         <ItemDetailRedux path="/ItemDetail/:nftId" />
         <Author path="/Author/:authorId" />
