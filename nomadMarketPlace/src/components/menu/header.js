@@ -96,21 +96,21 @@ const Header= function() {
        <div className='row w-100-nav'>
           <div className='logo px-0'>
               <div className='navbar-title navbar-item'>
-                <NavLink to="/">
+                <NavLink to="/nomadHome">
                 <img
-                    src="/img/logo-3.png"
+                    src="/img/ailogo.png"
                     className="img-fluid d-block"
-                    alt="#"
+                    alt="aiNomadLogo"
                   />
                   <img
-                    src="/img/logo-3.png"
+                      src="/img/ailogo.png"
                     className="img-fluid d-3"
-                    alt="#"
+                    alt="aiNomadLogo"
                   />
                   <img
-                    src="/img/logo-light.png"
+                      src="/img/ailogo.png"
                     className="img-fluid d-none"
-                    alt="#"
+                    alt="aiNomadLogo"
                   />
                 </NavLink>
               </div>
