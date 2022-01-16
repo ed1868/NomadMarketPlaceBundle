@@ -68,6 +68,15 @@ const Header= function() {
       closeMenu3();
     });
 
+    // CLOSE MENU ETH OPTIONS
+    const [medMenu, eth_icon] = useState(true);
+    useEffect(() => {
+      const stickyMed = document.getElementsByClassName('stickyMenu');
+    });
+
+
+
+
     const [showmenu, btn_icon] = useState(false);
     useEffect(() => {
     const header = document.getElementById("myHeader");
