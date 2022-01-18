@@ -68,32 +68,6 @@ const Header = function () {
     closeMenu3();
   });
 
-  // CLOSE MENU ETH OPTIONS
-  // const [medMenu, eth_icon] = useState(true);
-  // useEffect(() => {
-  //   const stickyMed = document.getElementsByClassName('stickyMenu');
-  //   let scrollCallbackNew = window.addEventListener("scroll", () => {
-
-  //     eth_icon(false);
-
-  //     switch (eth_icon) {
-
-  //       case true:
-  //         console.log(`ETH HAS GONE UP BY `);
-  //         break;
-
-  //       case document.getElementsByName.apply(""):
-
-  //         break;
-
-  //       default:
-  //         closeMenu1();
-
-  //     }
-  //   })
-  // });
-
-
 
 
   const [showmenu, btn_icon] = useState(false);
@@ -187,6 +161,7 @@ const Header = function () {
                             <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Explore</NavLink>
                             {/* <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Explore 2</NavLink> */}
                             <NavLink to="/ranking" onClick={() => btn_icon(!showmenu)}>Rankings</NavLink>
+                            <NavLink to="/colection/1" onClick={() => btn_icon(!showmenu)}>Ai Nomad Collection</NavLink>
                             <NavLink to="/colection/1" onClick={() => btn_icon(!showmenu)}>Collection</NavLink>
                             <NavLink to="/ItemDetail/1" onClick={() => btn_icon(!showmenu)}>Items Details</NavLink>
                             <NavLink to="/Auction" onClick={() => btn_icon(!showmenu)}>Live Auction</NavLink>
@@ -280,6 +255,7 @@ const Header = function () {
                             <NavLink to="/explore2">Explore</NavLink>
                             {/* <NavLink to="/explore2">Explore 2</NavLink> */}
                             <NavLink to="/ranking">Rankings</NavLink>
+                            <NavLink to="/colection/1">Ai Nomad Collection</NavLink>
                             <NavLink to="/colection/1">Collection</NavLink>
                             <NavLink to="/ItemDetail/1">Items Details</NavLink>
                             <NavLink to="/Auction">Live Auction</NavLink>
