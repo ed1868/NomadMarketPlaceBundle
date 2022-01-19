@@ -9,6 +9,11 @@ import { createGlobalStyle } from 'styled-components';
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
 
+
+
+import ColumnNewThreeColRedux from '../components/ColumnNewThreeColRedux';
+
+
 const fadeInUp = keyframes`
   0% {
     opacity: 0;
@@ -108,10 +113,11 @@ const homethree= () => (
       <div className='container'>
         <div className='row'>
           <div className='col-lg-12'>
-              <h2 className='style-2'>New Items</h2>
+              <h2 className='style-2'>New lsdnjflkdsjflks</h2>
           </div>
         </div>
-       <ColumnNewRedux/>
+        <ColumnNewThreeColRedux />
+       {/* <ColumnNewRedux/> */}
       </div>
       </section>
 
