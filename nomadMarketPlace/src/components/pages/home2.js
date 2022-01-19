@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import Particle from '../components/Particle';
 import SliderMainParticle from '../components/SliderMainParticle';
 import FeatureBox from '../components/FeatureBox';
@@ -7,6 +7,20 @@ import CarouselNewRedux from '../components/CarouselNewRedux';
 import AuthorListRedux from '../components/AuthorListRedux';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+
+import ColumnNewThreeColRedux from '../components/ColumnNewThreeColRedux';
+
+
+// import { useSelector, useDispatch } from 'react-redux';
+// import * as selectors from '../../store/selectors';
+// import * as actions from '../../store/actions/thunks';
+// import NftCard from './NftCard';
+// import { clearNfts, clearFilter } from '../../store/actions';
+
+
+
+
+
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader .logo .d-block{
@@ -169,7 +183,8 @@ const homeone= () => (
               <h2>New Items</h2>
           </div>
         </div> 
-        <CarouselNewRedux/>
+        <ColumnNewThreeColRedux />
+        {/* <CarouselNewRedux/> */}
       </section>
 
       <section className='container no-top no-bottom'>

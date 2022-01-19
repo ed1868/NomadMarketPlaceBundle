@@ -35,6 +35,11 @@ const ColumnNewThreeColRedux = () => {
     const loadMore = () => {
         dispatch(actions.fetchNftsBreakdown());
     }
+
+nftItems.map(item => {
+    console.log('SHUTTTTTT;::::::', item);
+})
+    
     
   return (
     <div className='row'>

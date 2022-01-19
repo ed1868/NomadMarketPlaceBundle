@@ -8,6 +8,8 @@ import AuthorListRedux from '../components/AuthorListRedux';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
 
+import ColumnNewThreeColRedux from '../components/ColumnNewThreeColRedux';
+
 const GlobalStyles = createGlobalStyle`
   header#myHeader .logo .d-block{
     display: none !important;
@@ -169,7 +171,8 @@ const homeone= () => (
               <h2>New Items</h2>
           </div>
         </div> 
-        <CarouselNewRedux/>
+        <ColumnNewThreeColRedux />
+        {/* <CarouselNewRedux/> */}
       </section>
 
       <section className='container no-top no-bottom'>

@@ -30,6 +30,11 @@ const CarouselNewRedux = () => {
         dispatch(fetchNftsBreakdown());
     }, [dispatch]);
 
+
+    nfts.map(item => {
+      console.log('  shit fuk  ::: ',Object.values(item));
+    })
+
     return (
         <div className='nft'>
           <Slider {...carouselNew}>
