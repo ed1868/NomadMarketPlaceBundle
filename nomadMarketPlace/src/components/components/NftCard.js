@@ -17,9 +17,12 @@ const Outer = styled.div`
 const NftCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4', clockTop = true, height, onImgLoad }) => {
 
     const navigateTo = (link) => {
+        console.log('THE FUCKING LINK LL ', link )
         navigate(link);
     }
-
+console.log('SGDFHJSGFHJSDGFJHSDG',api.baseUrl + nft.author.avatar.url);
+console.log('fuck me :: ', nft)
+console.log('side ways ::: ', api.baseUrl + api.authors + "/" +  nft.author.id);
     return (
         <div className={className}>
             <div className="nft__item m-0">
@@ -35,7 +38,7 @@ const NftCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-sm-6 col-xs-12
                     </div>
                 }
                 <div className="author_list_pp">
-                    <span onClick={()=> navigateTo(nft.author_link)}>                                    
+                    <span onClick={()=> navigateTo(nft.author_link + nft.author.id)}>                                    
                         <img className="lazy" src={api.baseUrl + nft.author.avatar.url} alt=""/>
                         <i className="fa fa-check"></i>
                     </span>
