@@ -179,7 +179,7 @@ const Header = function () {
                       )}
                     </div>
                   </div>
-                  <div className='navbar-item'>
+                  {/* <div className='navbar-item'>
                     <div ref={ref2}>
                       <div className="dropdown-custom dropdown-toggle btn"
                         onClick={handleBtnClick2}
@@ -202,13 +202,13 @@ const Header = function () {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                   <div className='navbar-item'>
                     <NavLink to="/activity" onClick={() => btn_icon(!showmenu)}>
                       Activity
                     </NavLink>
                   </div>
-                  <div className='navbar-item'>
+                  {/* <div className='navbar-item'>
                     <div ref={ref3}>
                       <div className="dropdown-custom dropdown-toggle btn"
                         onClick={handleBtnClick3}
@@ -230,7 +230,7 @@ const Header = function () {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               }
             </Breakpoint>
@@ -295,7 +295,7 @@ const Header = function () {
 
                   </div>
                 </div>
-                <div className='navbar-item'>
+                {/* <div className='navbar-item'>
                   <div ref={ref2}>
                     <div className="dropdown-custom dropdown-toggle btn"
                       onMouseEnter={handleBtnClick2} onMouseLeave={closeMenu2}>
@@ -318,14 +318,14 @@ const Header = function () {
                       )}
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className='navbar-item'>
                   <NavLink to="/activity">
                     Activity
                     <span className='lines'></span>
                   </NavLink>
                 </div>
-                <div className='navbar-item'>
+                {/* <div className='navbar-item'>
                   <div ref={ref3}>
                     <div className="dropdown-custom dropdown-toggle btn"
                       onMouseEnter={handleBtnClick3} onMouseLeave={closeMenu3}>
@@ -347,7 +347,7 @@ const Header = function () {
                       )}
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Breakpoint>
           </BreakpointProvider>
